@@ -1,0 +1,21 @@
+{
+  "bounty": "eth-pnl-fixed",
+  "strategy": "majority-vote trend ensemble (EMA 60/240 band 25bp + Donchian 240 + SMA 240 band 50bp, threshold 2, stateful hold)",
+  "capital_usd": 10000,
+  "cost_model": {"taker_fee_bp": 10, "slip_k": 5, "execution": "signal on bar close, fill at next bar open"},
+  "net_pnl_usd": 282.38,
+  "net_pnl_pct": 2.82,
+  "max_drawdown_pct": -2.49,
+  "trades": 3,
+  "total_costs_usd": 70.71,
+  "buy_and_hold_net_pnl_usd": -364.92,
+  "trade_log": [
+    {"action": "open SHORT", "bar": 739, "price": 2006.03},
+    {"action": "flip LONG", "bar": 1308, "price": 1948.26},
+    {"action": "close", "bar": 1439, "price": 1960.59}
+  ],
+  "fee_sensitivity_usd": {"0bp": 322.73, "5bp": 302.56, "10bp": 282.38, "20bp": 242.03, "30bp": 201.67},
+  "slippage_sensitivity_usd": {"slip_k_0": 312.74, "slip_k_5": 282.38, "slip_k_10": 252.02, "slip_k_20": 191.30},
+  "parameter_family_54_combos": {"mean_usd": 201, "median_usd": 193, "min_usd": 85, "max_usd": 282, "positive": "54/54"},
+  "synthetic_tail_6h_totals_usd": {"down_weak": -146, "up_sharp": 749, "flat": 38, "second_crash": 232}
+}
